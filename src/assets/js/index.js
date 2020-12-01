@@ -23,3 +23,22 @@ menuIconClose.addEventListener("click", function () {
     menuIconClose.classList.add("hidden");
     menuIconClose.classList.remove("absolute");
 });
+
+let menuWrapper = document.getElementById("navWrapper");
+
+if (
+    "IntersectionObserver" in window &&
+    "IntersectionObserverEntry" in window &&
+    "intersectionRatio" in window.IntersectionObserverEntry.prototype
+) {
+    let observer = new IntersectionObserver((entries) => {
+        if (entries[0].boundingClientRect.y < 0) {
+            menuWrapper.classList.add("bg-primary");
+            menuWrapper.classList.add("shadow-lg");
+        } else {
+            menuWrapper.classList.remove("bg-primary");
+            menuWrapper.classList.remove("shadow-lg");
+        }
+    });
+    observer.observe(document.querySelector("#top-of-site-pixel-anchor"));
+}
