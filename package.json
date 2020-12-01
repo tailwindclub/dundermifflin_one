@@ -1,11 +1,11 @@
 {
-    "name": "tailwindcss-parcel-boilerplate",
+    "name": "dundermifflin_one",
     "version": "1.0.0",
     "description": "",
-    "main": "src/index.js",
+    "main": "src/index.html",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/hacknug/tailwindcss-parcel-boilerplate.git"
+        "url": "git+https://github.com/tailwindclub/dundermifflin_one"
     },
     "scripts": {
         "postcss:watch": "postcss src/assets/css/index.pcss -o src/assets/css/index.css --env development -w",
@@ -21,14 +21,11 @@
         "tailwind",
         "tailwindcss",
         "tailwind css",
-        "parcel",
-        "postcss",
-        "posthtml"
+        "parcel"
     ],
     "author": {
-        "name": "Nestor Vera",
-        "email": "nestorvera@me.com",
-        "url": "https://nestor.rip/"
+        "name": "Matt Naus",
+        "email": "mnaus@hey.com"
     },
     "license": "MIT",
     "dependencies": {
