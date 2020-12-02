@@ -69,11 +69,21 @@
  */
 
 .custom-shape-divider-bottom-1605947787 svg {
-    width: calc(205% + 1.3px);
+    width: calc(205% + 10.3px);
     height: 150px;
     transform: rotateY(180deg);
 }
 
+@media all and (min-width: 1200px) {
+    .custom-shape-divider-bottom-1605947787 svg {
+        height: 250px;
+    }
+}
+
 .custom-shape-divider-bottom-1605947787 .shape-fill {
     fill: #ffffff;
+}
+
+.custom-shape-divider-bottom-1605947787 .shape-border {
+    fill: url(#MyGradient);
 }
